@@ -95,7 +95,7 @@ export interface ILendingProtocol extends DeFiProtocol {
 }
 
 export interface IStakingProtocol extends DeFiProtocol {
-    stake(params: StakeParams, walletProvider: EdwinWallet): Promise<Transaction>;
+    stake(params: StakeParams, walletProvider: EdwinWallet): Promise<string>;
     unstake(params: StakeParams, walletProvider: EdwinWallet): Promise<Transaction>;
     claimRewards?(params: StakeParams, walletProvider: EdwinWallet): Promise<Transaction>;
 }
